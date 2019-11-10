@@ -46,7 +46,7 @@ import { PORT, NODE_ENV, MONGO_URI,SESS_NAME, SESS_SECRET,
     apiRouter.use('/users', userRoutes);
 
     // apiRouter uses sessionRoutes for /users
-    apiRouter.use('/sessionRoutes', sessionRoutes);
+    apiRouter.use('/session', sessionRoutes);
 
     app.listen( PORT, () => console.log(`Listening on port ${PORT}`));
   }
